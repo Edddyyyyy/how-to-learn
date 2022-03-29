@@ -49,7 +49,7 @@ a {
   font-size: 102px;
   display: flex;
   align-self: center;
-  position: absolute  ;
+  position: absolute;
 
 }
 .header_block-subtitle {
@@ -308,7 +308,7 @@ font-weight: bold;
 .table__cell {
     width: 200px;
     display: flex;
-    margin: 80px auto 0px; 
+    margin: 80px auto 0px;
     flex-direction: column;
     align-self: flex-start;
     border: #1f1f1f00 solid;
@@ -344,7 +344,7 @@ font-weight: bold;
   margin: 0 auto;
   padding: 60px 0 40px 0;
   width: 90%;
-  justify-content: space-between  ;
+  justify-content: space-between;
   min-height: 168px;
 }
 .logo__place-footer {
@@ -352,7 +352,7 @@ font-weight: bold;
   height: 35px;
 }
 .footer_column__content-copyright {
-  position: relative; 
+  position: relative;
   flex-basis: 711px;
   
 }
@@ -381,7 +381,7 @@ font-weight: bold;
   padding-left: 0;
   margin-bottom: 16px;
   line-height: 30px;
-  font-size: 18px;  
+  font-size: 18px;
   font-weight: normal;
   color: white;
   list-style-type: none;
