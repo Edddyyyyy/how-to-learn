@@ -2,20 +2,22 @@
   margin: 0;
   padding: 0;
 }
-a {
-  color: #2f80ed;
-  text-decoration: none;
-}
+
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
   /* поэтому выше установлена минимальная ширина страницы */
+  max-width: 1600pxx;
+  /* выше установили ограничение по максимальной ширине /
+  margin: 0 auto;
+  / выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
 .header {
   background-color: #f2f2f2;
-  height: 756px;
+  height: 100vh;
+  max-height: 756px;
   min-height: 600px;
   /* выше установили ограничения для секции */
   justify-content: start;
@@ -24,9 +26,13 @@ a {
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
-.header__square-pic {
+.header__quare-pic {
+  position: absolute;
+  background-color: #2f80ed;
   height: 568px;
   width: 568px;
+  top: 64px;
+  right: 0;
 }
 
 /* и элемента с модификатором вида ключ-значение */
@@ -38,61 +44,48 @@ a {
 }
 
 .logo_place_header {
-  margin: 30px 0 0 64px;
-  align-self: start;
   position: absolute;
+  top: 30px;
+  left: 64px;
 }
 
-.header_block-title {
+.header__block-title {
   margin: 0 0 0 64px;
+  line-height: 94px;
   width: 730px;
   font-size: 102px;
-  display: flex;
   align-self: center;
-  position: absolute;
-
 }
-.header_block-subtitle {
-  margin: 0 0 30px 64px;
-  align-self: end;
-  justify-content: end;
+.header__block-subtitle {
+  position: absolute;
+  bottom: 30px;
+  left: 64px;
   width: 388px;
+  line-height: 25px;
   font-size: 18px;
-  position: absolute;
-}
-.header_main-illustration {
- width: 765px;
- height: 608px;
- position: absolute;
- right: 0;
- bottom: 0;
-}
-.header_square-pic {
-  position: absolute;
-  background-color: #2f80ed;
-  height: 568px;
-  width: 568px;
-  top: 64px;
-  right: 0;
-}
-
-
-.description {
- display: flex;
- justify-content: space-around;
   
 }
-  .two-columns { 
+.header__main-illustration {
+   object-fit: cover;
+   width: 765px;
+   height: 608px;
+   position: absolute;
+   right: 0;
+   bottom: 0;
+}
+.header_link {
+  color: #2f80ed;
+  text-decoration: none;
+}
+
+.two-columns { 
     display: flex;
     justify-content: space-between;
     width: 80%;
     min-width: 784px;
-    margin: 100px auto;
-    
-
-   
+    margin: 100px auto; 
 }
-.two-columns-brief {
+.two__columns-brief {
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
@@ -101,13 +94,13 @@ a {
 
 
 }
-.two-columns-main-text {
+.two__columns-main-text {
   
   width: 80%;
   min-width: 784px;
   
 }
-.two_columns-paragraph {
+.two__columns-paragraph {
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
@@ -140,7 +133,7 @@ font-weight: bold;
   justify-content: center;
   margin: 20px auto 60px auto;
 }
-.section_subtitle {
+.section-subtitle {
   
   text-align: center;
   line-height: 34px;
@@ -150,21 +143,20 @@ font-weight: bold;
 
 .table {
   display: flex;
-  width: 1100px;
+  width: 100vh;
   flex-wrap: wrap;
   justify-content: space-between;
   align-content: space-between;
   margin: auto;
 }
 
-.table-cell {
+.table__cell {
   width: 250px;
-  height: auto;
   list-style-type: none;
   margin-bottom: 60px;
 }
 
-.table_heading {
+.table__heading {
   display: flex;
   line-height: 1.15;
   font-size: 24px;
@@ -173,13 +165,13 @@ font-weight: bold;
   margin-bottom: 20px;
   
 }
-.table-text {
+.table__text {
   list-style-type: none;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
 }
-.text-p {
+.text__p {
   margin-top: 20px;
   line-height: 1.2;
   font-size: 18px;
@@ -191,20 +183,19 @@ font-weight: bold;
 .feynman {
   padding: 0;
   margin-top: 0;
-  padding-top: 50px;
-  height: 890px;
+  padding-top: 100px;
+  height: 100%;
+  min-height: 890px;
   position: relative;
-  justify-content: center;
   align-items: center;
   background-color: #f2f2f2;
   
 }
 .feynman__title {
-  width: 648px;
+  max-width: 648px;
   margin: 100px  auto 70px;
   text-align: center;
   position: relative;
-  
   line-height: 1.15;
   font-size: 120px;
   font-weight: bold;
@@ -256,7 +247,7 @@ font-weight: bold;
   
 }
 
-.kaufman-triangle {
+.kaufman__triangle {
   position: absolute;
   right: -210px;
   width: 877px;
@@ -265,7 +256,7 @@ font-weight: bold;
   
 }
 
-.section-title__theme_dark {
+.title__theme_dark {
   margin: auto;
   position: relative;
   text-align: center;
@@ -278,7 +269,7 @@ font-weight: bold;
   color: white;
 }
 
-.section-subtitle__theme_dark {
+.subtitle__theme_dark {
   margin: auto;
   position: relative;
   text-align: center;
@@ -292,25 +283,22 @@ font-weight: bold;
 
 .table_theme_dark {
   padding: 0px;
-  justify-content: flex-start;
+  justify-content: space-between;
   display: flex;
   flex-wrap: wrap;
   z-index: 1;
   flex-direction: row;
-  width: 1200px;
-  align-content: flex-start;
-  align-items: flex-start;
+  width: 1100px;
+  max-width: 1200px;
 
-  
 }
 .table__cell {
     width: 200px;
     display: flex;
     margin: 80px auto 0px;
+    padding: 0;
     flex-direction: column;
     align-self: flex-start;
-    border: #1f1f1f00 solid;
-  
 }
 .table__heading {
   margin-bottom: 20px;
@@ -335,12 +323,12 @@ font-weight: bold;
 .footer {
   min-height: 350px;
   background-color: #1f1f1f;
-  
+  padding: 60px 0 40px 0;
+  box-sizing: border-box;
 }
-.footer_columns {
+.footer__columns {
   display: flex;
   margin: 0 auto;
-  padding: 60px 0 40px 0;
   width: 90%;
   justify-content: space-between;
   min-height: 168px;
@@ -349,12 +337,12 @@ font-weight: bold;
   width: 183px;
   height: 35px;
 }
-.footer_column__content-copyright {
+.footer__column_content-copyright {
   position: relative;
   flex-basis: 711px;
   
 }
-.footer_author-text {
+.footer__author-text {
   position: absolute;
   flex-wrap: nowrap;
   left: 0;
@@ -368,14 +356,14 @@ font-weight: bold;
   color: white;
 }
 
-.footer_column-heading {
+.footer__column-heading {
   margin-bottom: 20px;
   line-height: 30px;
   font-size: 18px;
   font-weight: bold;
   color: white;
 }
-.footer_column-links {
+.footer__column-link {
   padding-left: 0;
   margin-bottom: 16px;
   line-height: 30px;
@@ -395,4 +383,5 @@ font-weight: bold;
 }
 .link {
   color: white;
+  text-decoration: none;
 }
