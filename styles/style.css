@@ -99,24 +99,20 @@
 font-weight: bold;
 }  
 /*section digits*/
-.digits_section-title {
+.section-title {
   display: flex;
   justify-content: center;
   width: 60%;
   margin: auto;
-}
-.section_title {
   text-align: center;
   line-height: 1.15;
   font-size: 60px;
   font-weight: bold;
 }
-.digits_section-subtitle {
+.section-subtitle {
   display: flex;
   justify-content: center;
   margin: 20px auto 60px auto;
-}
-.section-subtitle {
   text-align: center;
   line-height: 34px;
   font-size: 24px;
