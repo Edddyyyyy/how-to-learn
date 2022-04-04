@@ -43,14 +43,14 @@
   left: 64px;
 }
 
-.header__block-title {
+.header__title {
   margin: 0 0 0 64px;
   line-height: 96px;
   width: 730px;
   font-size: 102px;
   align-self: center;
 }
-.header__block-subtitle {
+.header__subtitle {
   position: absolute;
   bottom: 30px;
   left: 64px;
@@ -95,35 +95,38 @@
   font-weight: normal;
   margin-bottom: 30px;
 }
-.span-accent {
+.span__accent {
 font-weight: bold;
 }  
-
 /*section digits*/
-.digits_section__title {
+.section-title {
   display: flex;
   justify-content: center;
   width: 60%;
   margin: auto;
-}
-.section_title {
   text-align: center;
   line-height: 1.15;
   font-size: 60px;
   font-weight: bold;
 }
-.digits_section-subtitle {
+.section-subtitle {
   display: flex;
   justify-content: center;
   margin: 20px auto 60px auto;
-}
-.section-subtitle {
   text-align: center;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
 }
-
+.table_theme_dark {
+  padding: 0px; 
+  justify-content: flex-start; 
+  display: flex; 
+  flex-wrap: wrap; 
+  z-index: 1; 
+  flex-direction: row; 
+  width: 1200px; 
+}
 .table {
   display: flex;
   flex-wrap: wrap;
@@ -159,7 +162,7 @@ font-weight: bold;
   font-size: 18px;
   font-weight: normal;
 }
-.text__p {
+.table__text:nth-child(3) {
   margin-top: 20px;
   line-height: 1.2;
   font-size: 18px;
@@ -280,8 +283,6 @@ font-weight: bold;
     flex-direction: column;
     align-self: flex-start;
 }
-
-
 .table__cell_margin {
   margin-top: 80px;
   margin-bottom: 90px;
@@ -329,7 +330,7 @@ font-weight: bold;
   font-weight: bold;
   color: white;
 }
-.footer__column-link {
+.footer__column-links {
   padding-left: 0;
   margin-bottom: 16px;
   line-height: 30px;
@@ -347,7 +348,7 @@ font-weight: bold;
   margin-right: 10px;
   list-style-type: none;
 }
-.link {
+.footer__column-link {
   color: white;
   text-decoration: none;
 }
