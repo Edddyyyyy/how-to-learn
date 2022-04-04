@@ -67,7 +67,7 @@
    right: 0;
    bottom: 0;
 }
-.header_link {
+.header__link {
   color: #2f80ed;
   text-decoration: none;
 }
@@ -313,8 +313,7 @@ font-weight: bold;
 .footer__author-text {
   position: absolute;
   flex-wrap: nowrap;
-  left: 0;
-  bottom: 0;
+  top: 100px;
   line-height: 25px;
   font-size: 18px;
   padding-top: 18px;
