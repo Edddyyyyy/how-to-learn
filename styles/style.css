@@ -118,15 +118,6 @@ font-weight: bold;
   font-size: 24px;
   font-weight: normal;
 }
-.table_theme_dark {
-  padding: 0px;
-  justify-content: flex-start;
-  display: flex;
-  flex-wrap: wrap;
-  z-index: 1;
-  flex-direction: row;
-  width: 1200px;
-}
 .table {
   display: flex;
   flex-wrap: wrap;
