@@ -19,7 +19,7 @@
   position: relative;
 }
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
-.header__quare-pic {
+.header__square-pic {
   position: absolute;
   background-color: #2f80ed;
   height: 568px;
@@ -62,7 +62,7 @@
    right: 0;
    bottom: 0;
 }
-.header_link {
+.header__link {
   color: #2f80ed;
   text-decoration: none;
 }
@@ -95,7 +95,7 @@
 .two-columns__paragraph:last-child {
   margin-bottom: 0;
 }
-.two-columns__span__accent {
+.two-columns__span-accent {
 font-weight: bold;
 }  
 /*section digits*/
@@ -113,10 +113,20 @@ font-weight: bold;
   display: flex;
   justify-content: center;
   margin: 20px auto 60px auto;
+  margin-bottom: 0;
   text-align: center;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
+}
+.table_theme_dark {
+  padding: 0px; 
+  justify-content: flex-start; 
+  display: flex; 
+  flex-wrap: wrap; 
+  z-index: 1; 
+  flex-direction: row; 
+  width: 1200px; 
 }
 .table {
   display: flex;
@@ -131,7 +141,8 @@ font-weight: bold;
 .table__cell {
   width: 250px;
   display: flex;
-  margin-bottom: 100px;
+  margin-top: 60px;
+  margin-bottom: 0;
   padding: 0;
   flex-direction: column;
   align-self: flex-start;
@@ -160,7 +171,7 @@ font-weight: bold;
 .feynman {
   box-sizing: border-box;
   padding: 0;
-  margin-top: 0;
+  margin-top: 100px;
   padding-top: 100px;
   height: 100%;
   min-height: 890px;
@@ -220,6 +231,7 @@ font-weight: bold;
 }
 .kaufman__triangle {
   position: absolute;
+  background-size: cover;
   right: -210px;
   width: 877px;
   height: 877px;
@@ -263,6 +275,7 @@ font-weight: bold;
   color: white;
   margin-right: 0;
   margin-top: 80px;
+  margin-bottom: 0;
 }
 /*Section footer*/
 .footer {
@@ -277,25 +290,22 @@ font-weight: bold;
   width: 90%;
   justify-content: space-between;
 }
-.logo_place-footer {
+.logo_place_footer {
   width: 183px;
   height: 35px;
 }
-.footer_column__content-copyright {
+.footer__column_content-copyright {
   position: relative;
   flex-basis: 711px;
 }
 .footer__author {
-  flex-wrap: nowrap;
   margin: 0;
-  left: 0;
-  bottom: 0;
   line-height: 25px;
   font-size: 18px;
-  padding-top: 18px;
-  padding-bottom: 18px;
   font-weight: normal;
   color: white;
+  position: absolute;
+  bottom: 0;
 }
 .footer__column-heading {
   margin: 0;
