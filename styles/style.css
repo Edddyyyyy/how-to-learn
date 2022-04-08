@@ -44,6 +44,7 @@
   width: 730px;
   font-size: 102px;
   align-self: center;
+  z-index: 1;
 }
 .header__subtitle {
   position: absolute;
@@ -108,6 +109,7 @@ font-weight: bold;
   line-height: 1.15;
   font-size: 60px;
   font-weight: bold;
+  z-index: 1;
 }
 .section-subtitle {
   display: flex;
@@ -118,6 +120,7 @@ font-weight: bold;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
+  z-index: 1;
 }
 .table {
   display: flex;
@@ -285,18 +288,22 @@ font-weight: bold;
   width: 183px;
   height: 35px;
 }
-.footer__column_content-copyright {
+.footer__column_content_copyright {
   position: relative;
   flex-basis: 711px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .footer__author {
-  margin: 0;
+  margin-top: 18px;
+  margin-bottom: 19px;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
   color: white;
-  position: absolute;
-  bottom: 0;
+  display: flex;
+  align-items: flex-end;
 }
 .footer__column-heading {
   margin: 0;
