@@ -27,7 +27,7 @@
   top: 64px;
   right: 0;
 }
-/* и элемента с модификатором вида ключ-значение */
+/*и элемента с модификатором вида ключ-значение */
 .logo {
   height: 32px;
   width: 228px;
@@ -277,6 +277,7 @@ font-weight: bold;
   background-color: #1f1f1f;
   padding: 60px 0 40px 0;
   box-sizing: border-box;
+  display: flex;
 }
 .footer__columns {
   display: flex;
