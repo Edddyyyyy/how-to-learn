@@ -231,7 +231,7 @@ font-weight: bold;
   width: 877px;
   height: 877px;
   z-index: 0;
-  background-image:  url(/images/kaufman-triangle.svg);
+  background-image:  url(../images/kaufman-triangle.svg);
 }
 .section-title_theme_dark{
   margin: auto;
