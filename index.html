@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- Подскажите пожалуйста где ошибка в консоли, я исправил что увидел-->
+<!-- Подскажите пожалуйста где ошибка в консоли, я не понимаю-->
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
@@ -12,16 +12,16 @@
   <div class="page">
     <!-- block Header -->
     <header class="header">
-      <div class="header__square-pic"></div>
+      <div class="header__square-pic rotation"></div>
       <img class="header__main-illustration" src="./images/header-image.png" alt="фото">
       <a href="#"><img class="logo logo_place_header" src="./images/logo_place_header.svg" alt="Логотип Яндекс Практикума"></a>
       <h1 class="header__title">Научиться учиться</h1>
       <p class="header__subtitle">Какие современные и эффективные подходы к обучению вы можете использовать в своей жизни? <a class="header__link" href="#">Узнать →</a></p>
     </header>
     <main class="content">
-    <!-- section Description -->  
+    <!-- section Description -->
       <section class="description">
-        <div class="two-columns">  
+        <div class="two-columns">
             <h2 class="two-columns__brief">
               Главные проблемы в обучении
             </h2>
@@ -35,61 +35,135 @@
                 <p class="two-columns__paragraph">
                   Конкретные техники и упражнения помогают изменить подход к обучению, сделать его эффективным и захватывающим. Эти же техники применяются на примере обучения в Практикуме.
                 </p>
-            </div>   
-        </div> 
+            </div>
+        </div>
       </section>
-      <!-- section Digits -->
-      <section class="digits">
-        <h2 class="section-title">Цифры и факты</h2>
-        <p class="section-subtitle">Про учёбу и мозг</p>
-        <ul class="table">
-            <li class="table__cell">
-              <h3 class="table__heading">86 миллиардов</h3>
-              <p class="table__text">Число нейронов в мозге человека</p>
-            </li>
-            <li class="table__cell">
-              <h3 class="table__heading">2.1 миллиарда</h3>
-              <p class="table__text">Число нуждающихся в повышении квалификации</p>
-              <p class="table__text">Всемирный Банк, 2017</p>
-            </li>
-            <li class="table__cell">
-              <h3 class="table__heading">1000 терабайт</h3>
-              <p class="table__text">Объём памяти человека</p>
-            </li>
-            <li class="table__cell">
-             <h3 class="table__heading">500 триллионов</h3>
-              <p class="table__text">Число ответственных за обучение нервных синапсов у взрослого человека</p>
-            </li>
-            <li class="table__cell">
-              <h3 class="table__heading">420 миллионов</h3>
-              <p class="table__text">Число взрослых людей моложе 25 лет, не имеющих образования для трудоустройства</p>
-              <p class="table__text"> Всемирный Банк, 2017</p>
-            </li>
-            <li class="table__cell">
-              <h3 class="table__heading">17–20 лет</h3>
-              <p class="table__text">Пик обучаемости
+       <!-- section Techniques --> 
+      <section class="techniques">
+        <h2 class="section-title">Техники обучения</h2>
+        <p class="section-subtitle">Пять практик от Барбары Оакли</p>
+        <div class="cards">
+          <div class="cards__item">
+            <img class="cards__images" src="./images/cards-attention.png" alt="Карточка техники">
+            <h3 class="cards__title">Два вида внимания</h3>
+            <p class="cards__description">Глубокие знания возникают, если чередовать сфокусированное и рассеянное мышление.</p>
+          </div>
+          <div class="cards__item">
+            <img class="cards__images" src="./images/cards-recall.png" alt="Карточка техники">
+            <h3 class="cards__title">Recall</h3>
+            <p class="cards__description">Вспоминайте изученное — это позволит соединить разрозненные порции памяти.</p>
+          </div>
+          <div class="cards__item">
+            <img class="cards__images" src="./images/cards-interliving.png" alt="Карточка техники">
+            <h3 class="cards__title">Интерливинг</h3>
+            <p class="cards__description">Изучайте несколько навыков одновременно, они обогащают друг друга.</p>
+          </div>
+          <div class="cards__item">
+            <img class="cards__images" src="./images/cards-question.png" alt="Карточка техники">
+            <h3 class="cards__title">Вопросы</h3>
+            <p class="cards__description">Слушая преподавателя, придумывайте хороший вопрос, который вас действительно волнует.</p>
+          </div>
+          <div class="cards__item">
+            <img class="cards__images" src="./images/cards-competence.png" alt="Карточка техники">
+            <h3 class="cards__title">Иллюзия компетентности</h3>
+            <p class="cards__description">Повторите про себя, запишите, расскажите другу: вам только кажется, что вы владеете новой темой.</p>
+          </div>
+        </div>
+      </section>
+      <!-- section Video  -->
+      <section class="video">
+      <h2 class="section-title">Видео нa TED</h2>
+      <p class="section-subtitle">Для тех, кто любит прокрастинировать</p>
+      <div class="video__iframes">
+        <iframe class="video__iframe" src="https://www.youtube.com/embed/arj7oStGLkU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe class="video__iframe" src="https://www.youtube.com/embed/5MgBikgcWnY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      </section>
+      <!-- section Oakley -->
+      <section class="oakley">
+        <div class="two-columns">
+          <h2 class="two-columns__brief">
+            Главные проблемы в обучении
+          </h2>
+          <div class="two-columns__main-text">
+              <p class="two-columns__paragraph">
+                Ни в школе, ни в институте нас не учат тому, как правильно изучать материал. Мы готовимся к экзаменам и учим билеты. Мы тренируемся решать однообразные задачи, чтобы лучше сдать тест, но часто в итоге это не дает нам реального знания. Зубрежка быстро выветривается и не приносит пользы.
               </p>
-            </li>
-            <li class="table__cell">
-              <h3 class="table__heading">1885 год</h3>
-              <p class="table__text">Открытие кривой забывания</p>
-            </li>
-            <li class="table__cell">
-              <h3 class="table__heading">1889 год</h3>
-              <p class="table__text">Открытие условного рефлекса</p>
-            </li>
-          </ul>
+              <p class="two-columns__paragraph">
+                <span class="two-columns__span-accent">Вывод:</span> учиться тоже нужно уметь, но почему-то этому мало где учат. Что с этим делать?
+              </p>
+              <p class="two-columns__paragraph">
+                Конкретные техники и упражнения помогают изменить подход к обучению, сделать его эффективным и захватывающим. Эти же техники применяются на примере обучения в Практикуме.
+              </p>
+          </div>
+        </div>
       </section>
-      <!-- section Feynman -->  
+      <!-- section Feynman -->
       <section class="feynman">
         <h2 class="feynman__title">Метод Фейнмана</h2>
         <p class="feynman__subtitle">Выучить и не забыть.</p>
         <a class="feynman__link" href="#">Подробнее →</a>
         <img class="feynman__images" src="./images/feynman.png" alt="Фейнман">
       </section>
+      <!-- section Digits -->
+      <section class="digits">
+         <h2 class="section-title">Цифры и факты</h2>
+         <p class="section-subtitle">Про учёбу и мозг</p>
+         <ul class="table">
+            <li class="table__cell">
+                <h3 class="table__heading">86 миллиардов</h3>
+                <p class="table__text">Число нейронов в мозге человека</p>
+            </li>
+            <li class="table__cell">
+                <h3 class="table__heading">2.1 миллиарда</h3>
+                <p class="table__text">Число нуждающихся в повышении квалификации</p>
+                <p class="table__text">Всемирный Банк, 2017</p>
+            </li>
+            <li class="table__cell">
+                <h3 class="table__heading">1000 терабайт</h3>
+                <p class="table__text">Объём памяти человека</p>
+            </li>
+            <li class="table__cell">
+                <h3 class="table__heading">500 триллионов</h3>
+                <p class="table__text">Число ответственных за обучение нервных синапсов у взрослого человека</p>
+            </li>
+            <li class="table__cell">
+                <h3 class="table__heading">420 миллионов</h3>
+                <p class="table__text">Число взрослых людей моложе 25 лет, не имеющих образования для трудоустройства</p>
+                <p class="table__text"> Всемирный Банк, 2017</p>
+            </li>
+            <li class="table__cell">
+                <h3 class="table__heading">17–20 лет</h3>
+                <p class="table__text">Пик обучаемости
+                </p>
+            </li>
+            <li class="table__cell">
+                <h3 class="table__heading">1885 год</h3>
+                <p class="table__text">Открытие кривой забывания</p>
+            </li>
+            <li class="table__cell">
+                <h3 class="table__heading">1889 год</h3>
+                <p class="table__text">Открытие условного рефлекса</p>
+            </li>
+        </ul>
+      </section>
+      <!-- section Khan -->
+      <section class="khan">
+        <div class="khan__container">
+          <h4 class="khan__author">Салман Хан</h4>
+          <h2 class="khan__title">Весь мир — школа</h2>
+          <p class="khan__quote">Страсть и новаторство Сала Хана меняют процесс обучения миллионов студентов по всему миру. Книгу «Весь мир — школа» нужно прочитать всем, кто занимается образованием — так учащиеся повсюду смогут получить навыки и знания, которые приносят успех в школе, карьере и жизни.</p>
+          <h3 class="khan__quote-author">Джордж Лукас</h3>
+          <p class="khan__quote-author-subline">Кинорежиссер, продюсер</p>
+          <div class="khan__book-container">
+            <img class="khan__book-pic" src="./images/khan-book.jpg" alt="Книга Салмана Хана">
+            <a class="khan__buy-link" href="#">Купить книгу →</a>
+          </div>
+        </div>
+      </section>
       <!-- section Kaufman -->
       <section class="kaufman">
-          <div class="kaufman__triangle"></div>
+          <div class="kaufman__triangle rotation"></div>
           <h2 class="section-title section-title_theme_dark">Принципы обучения</h2>
           <p class="section-subtitle section-subtitle_theme_dark">от Джоша Кауфмана</p>
           <ul class="table table_theme_dark">
@@ -136,6 +210,17 @@
           </ul>
       </section>
     </main>
+    <!-- block Resources -->
+    <section class="resources">
+      <h2 class="section-title">Полезные ресурсы</h2>
+      <h3 class="section-subtitle">Больше материалов о техниках и лайфхаках обучения</h3>
+      <div class="resources__logo-zone">
+          <a class="resources__link" href="#"><img class="resources__logo" src="./images/logo/resources-arzamas.svg" alt="логотип arzams"></a>
+          <a class="resources__link" href="#"><img class="resources__logo" src="./images/logo/resources-n1.svg" alt="логотип n+1"></a>
+          <a class="resources__link" href="#"><img class="resources__logo" src="./images/logo/resources-strelka.svg" alt="логотип strelka"></a>
+          <a class="resources__link" href="#"><img class="resources__logo" src="./images/logo/resources-polka.svg" alt="логотип polka"></a>
+      </div>
+    </section>
     <!-- block Footer -->
     <footer class="footer">
       <div class="footer__columns">
